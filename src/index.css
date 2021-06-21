@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+
+.cursive {
+  font-family: "Amatic sc", cursive;
+  font-weight: 700;
+}
+prose img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home-name {
+  font-size: 150px;
+}
+.header {
+  font-size: 3vw;
+  font-family: cursive;
+  text-align: center;
+  color: rgb(173, 98, 40);
+}
+
+.image {
+  border-radius: 20%;
+  width: 500px;
+}
+.solange {
+  font-size: 7vw;
+}
+.take-care {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  font-size: 4vw;
+  text-align: center;
+}
+.logo {
+  height: 150px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.friends {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.photos-page {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.photos {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about h1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: rgb(151, 101, 39);
+  font-size: 5vw;
+  font-family: cursive;
+}
+.about-para {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  color: rgb(151, 101, 39);
+}
+.about-photo {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact-reserve {
+  font-size: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(99, 71, 37);
+  font-family: cursive;
+  text-align: center;
+}
+.contact-info {
+  color: rgb(151, 101, 39);
+  display: flex;
+  justify-content: space-around;
+}
+.contact-info h1 {
+  font-size: 5vw;
+}
+.contact-info img {
+  width: 300px;
+  border-radius: 40px;
+}
+.contact-info a {
+  color: rgb(90, 90, 253);
 }
