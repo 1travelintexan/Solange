@@ -5,10 +5,8 @@ class About extends Component {
   render() {
     return (
       <main>
-        <div className="about">
-          <section>
-            <img src={solange} alt="solange" className="about-photo" />
-          </section>
+        <div className="flex flex-col  md: about">
+          <img src={solange} alt="solange" className="mb-10 about-photo" />
           <div className="about-words">
             <section>
               <h1>~Òla, My name is Solange.</h1>
@@ -22,11 +20,11 @@ class About extends Component {
             and now after many hours of studying and practicing, I am a licensed
             massage therapist located in beautiful Ericeria, Portugal. I
             Specialize in sport therapy but I am qualified to do many different
-            styles of massage. Whether you are looking for a calm, relaxing
-            afternoon or you want a deep tissue massage after a yoga or surf
-            session designed to loosen up the soft tissue. I feel confident that
-            I can give you exactly what you are looking for. I am looking
-            forward to our next session. Have a great day!
+            styles of massage. If you are looking for a calm, relaxing afternoon
+            or you want a deep tissue massage after a yoga or surf session I can
+            give you a massage designed to loosen up all the soft tissue to
+            avoid soreness the next day. I am looking forward to our next
+            session. Contact me to schedule your next appointment!
           </h3>
         </div>
       </main>

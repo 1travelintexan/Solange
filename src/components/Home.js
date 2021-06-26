@@ -8,24 +8,24 @@ class Home extends Component {
         <img
           src={leafImage}
           alt="leaves"
-          className="absolute object-cover w-full h-full"
+          className="absolute object-cover w-full h-full "
         />
-        <div className="flex justify-between ">
-          <section className="relative flex flex-col justify-start min-h-screen pt-12 lg:pt-15 px-8">
-            <h1 className="solange text-red-200 mb-20 font-bold cursive leading-none lg:leading-snug home-name">
+        <div className="flex flex-col take-care ">
+          <div className="relative">
+            <h1 className="take-care text-red-100 mb-5 mt-10 text-4xl font-bold cursive md:text-8xl">
               Solange Marques
             </h1>
-            <h3 className=" take-care text-red-200">
+            <h3 className="take-care text-lg text-red-200 mb-10 md:text-3xl">
               Everybody deserves a massage!
             </h3>
-          </section>
-          <section>
+          </div>
+          <div>
             <img
               src={TablePic}
               alt="table"
-              className=" image relative flex justify-center pt-12 lg:pt-15 px-8"
+              className="relative w-40 rounded-xl md:w-full rounded-3xl"
             />
-          </section>
+          </div>
         </div>
       </main>
     );

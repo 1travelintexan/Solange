@@ -1,59 +1,47 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { SocialIcon } from "react-social-icons";
 import logo from "../Images/logo.jpg";
 class NavBar extends Component {
   render() {
     return (
-      <header className="bg-green-800 flex">
-        <div className="container mx-10 flex justify-between ">
-          <nav className="flex">
-            <NavLink
-              to="/"
-              exact
-              activeClassName="text-white"
-              className="inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-600 text-4xl font-bold cursive tracking-widest"
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/photos"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-600 cursive"
-            >
-              Photos
-            </NavLink>
-            <NavLink
-              to="/about"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-600 cursive"
-            >
-              About
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-600 cursive"
-            >
-              Contact
-            </NavLink>
-          </nav>
-          <div className="friends py-3 px-3 my-6 rounded text-red-200 cursive">
-            <h1 className="text-white-700">Let's be friends!</h1>
-            <SocialIcon
-              url="https://www.instagram.com/solange_m_massage_therapist/"
-              className="mr-4 ml-2"
-              target="_blank"
-              fgColor="#fff"
-              style={{ height: 35, width: 35 }}
-            />
-            <SocialIcon
-              url="https://www.facebook.com/solange.marques.5667"
-              className="mr-4"
-              target="_blank"
-              fgColor="#fff"
-              style={{ height: 35, width: 35 }}
-            />
+      <header className="bg-green-800 py-2 md:py-10">
+        <div className="flex">
+          <div className="container flex justify-between md:mx-10">
+            <nav className="flex">
+              <NavLink
+                exact
+                activeClassName="active"
+                to="/"
+                className="inline-flex items-center px-2 text-red-100 hover:text-green-600 text-lg font-bold cursive md:text-4xl md:px-10 tracking-widest"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/photos"
+                className="inline-flex items-center px-2 rounded text-red-200 hover:text-green-600 text-m cursive md:text-3xl"
+              >
+                Photos
+              </NavLink>
+              <NavLink
+                to="/about"
+                className="inline-flex items-center px-2 rounded text-red-200 hover:text-green-600 text-m cursive md:text-3xl md:px-10"
+              >
+                About
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className="inline-flex items-center px-1 rounded text-red-200 hover:text-green-600 text-m cursive md:text-3xl"
+              >
+                Contact
+              </NavLink>
+            </nav>
           </div>
+          <img
+            className="w-10 mr-2 rounded-full md:w-32"
+            src={logo}
+            alt="logo"
+          />
         </div>
-        <img className="logo" src={logo} alt="logo" />
       </header>
     );
   }
