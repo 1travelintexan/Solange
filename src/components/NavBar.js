@@ -4,7 +4,7 @@ import logo from "../Images/logo.jpg";
 class NavBar extends Component {
   render() {
     return (
-      <header className="bg-green-800 py-2 md:py-10">
+      <header className="bg-green-800 py-2 md:py-4">
         <div className="flex">
           <div className="container flex justify-between md:mx-10">
             <nav className="flex">
@@ -37,7 +37,7 @@ class NavBar extends Component {
             </nav>
           </div>
           <img
-            className="w-10 mr-2 rounded-full md:w-32"
+            className="w-10 mr-2 rounded-full md:w-20"
             src={logo}
             alt="logo"
           />

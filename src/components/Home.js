@@ -12,14 +12,14 @@ class Home extends Component {
         />
         <div className="flex flex-col take-care ">
           <div className="relative">
-            <h1 className="take-care text-red-100 mb-5 mt-10 text-4xl font-bold cursive md:text-8xl">
+            <h1 className="take-care text-red-100 mb-5 mt-10 text-4xl font-bold cursive md:text-6xl">
               Solange Marques
             </h1>
             <h3 className="take-care text-lg text-red-200 mb-10 md:text-3xl">
               Everybody deserves a massage!
             </h3>
           </div>
-          <div>
+          <div className="w-72 flex justify-center ">
             <img
               src={TablePic}
               alt="table"
